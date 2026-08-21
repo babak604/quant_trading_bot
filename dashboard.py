@@ -1,29 +1,52 @@
+import os
 import sqlite3
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="Markov-1 Dashboard", layout="wide")
-st.title("⚡ Markov-1 Quantitative Trading Dashboard")
+DB_PATH = os.getenv("DB_PATH", "markov_1.db")
 
+st.set_page_config(page_title="Markov Strategy Dashboard", layout="wide")
+st.title("📊 Markov Strategy Performance & Signals")
+
+@st.cache_data(ttl=5)
 def load_data():
-    conn = sqlite3.connect("markov_1.db")
-    df = pd.read_sql_query("SELECT * FROM trading_signals ORDER BY id DESC LIMIT 200", conn)
-    conn.close()
-    return df
+    if not os.path.exists(DB_PATH):
+        return pd.DataFrame()
+    
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        df = pd.read_sql_query("SELECT * FROM trading_signals ORDER BY id DESC LIMIT 200", conn)
+        conn.close()
+        return df
+    except Exception:
+        return pd.DataFrame()
 
 df = load_data()
 
-if not df.empty:
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total Cycles Evaluated", len(df))
-    col2.metric("Mean Win Probability", f"{df['win_prob'].mean()*100:.1f}%")
-    col3.metric("Latest ETH Price", f"${df[df['coin']=='ETH']['price'].iloc[0]:.2f}" if not df[df['coin']=='ETH'].empty else "N/A")
-    col4.metric("Latest SOL Price", f"${df[df['coin']=='SOL']['price'].iloc[0]:.2f}" if not df[df['coin']=='SOL'].empty else "N/A")
+# Summary Metrics Row
+col1, col2, col3 = st.columns(3)
+col1.metric("Total Signals", len(df) if not df.empty else 0)
 
-    st.subheader("📊 Recent Telemetry & Regime Logs")
-    st.dataframe(df[['timestamp', 'coin', 'price', 'ofi', 'regime', 'win_prob', 'signal', 'pos_size_usd']], use_container_width=True)
-
-    st.subheader("📈 Order Flow Imbalance (OFI) Distribution")
-    st.line_chart(df.pivot(columns='coin', values='ofi'))
+if not df.empty and 'win_prob' in df.columns:
+    col2.metric("Avg Win Prob", f"{df['win_prob'].mean():.2%}")
+elif not df.empty and 'win_prob_bps' in df.columns:
+    col2.metric("Avg Win Prob", f"{(df['win_prob_bps'].mean() / 100):.2f}%")
 else:
-    st.info("No database records found yet.")
+    col2.metric("Avg Win Prob", "N/A")
+
+if not df.empty and 'coin' in df.columns and 'price' in df.columns:
+    eth_df = df[df['coin'] == 'ETH']
+    eth_price_str = f"${eth_df['price'].iloc[0]:.2f}" if not eth_df.empty else "N/A"
+elif not df.empty and 'symbol' in df.columns and 'price' in df.columns:
+    eth_df = df[df['symbol'].str.contains('ETH', case=False, na=False)]
+    eth_price_str = f"${eth_df['price'].iloc[0]:.2f}" if not eth_df.empty else "N/A"
+else:
+    eth_price_str = "N/A"
+
+col3.metric("Latest ETH Price", eth_price_str)
+
+st.subheader("Signal Logs")
+if not df.empty:
+    st.dataframe(df, use_container_width=True)
+else:
+    st.info("No signal data found.")
