@@ -1,0 +1,14 @@
+# --- HYPERLIQUID L2 (CRYPTO) ---
+HYPERLIQUID_WALLET_ADDRESS="0x837e319828530320bdb034e36df4ad876c96d4e975f895d488b507e4a91dec45"
+HYPERLIQUID_API_SECRET="0xc0fd13d379cc1323f4a7abea24c0696fbdb03062"
+HYPERLIQUID_ENV="mainnet"  # Use 'mainnet' or 'testnet'
+
+# --- OANDA CANADA (FOREX) ---
+OANDA_ACCOUNT_ID="101-xxx-xxxxxxx-xxx"
+OANDA_API_TOKEN="your_oanda_v20_api_token"
+OANDA_ENVIRONMENT="practice"  # Change to 'live' when funding real CAD
+
+# --- INTERACTIVE BROKERS (EQUITIES) ---
+IBKR_HOST="127.0.0.1"
+IBKR_PORT=7497  # 7497 = TWS Paper, 7496 = TWS Live
+IBKR_CLIENT_ID=1
