@@ -22,3 +22,8 @@ cache/
 *.db
 *.log
 .env*
+artifacts/
+cache/
+*.db
+*.log
+.env*
