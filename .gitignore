@@ -12,3 +12,8 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+artifacts/
+cache/
+*.db
+*.log
+.env*
