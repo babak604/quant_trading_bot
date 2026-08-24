@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3, os
 import streamlit as st
 from web3 import Web3
 
@@ -9,7 +9,6 @@ st.caption("Target Contract: 0x586C59EF9eAC77f5386fC814Bb6626Ac67f4fAdD (Arbitru
 
 RPC_URL = "https://sepolia-rollup.arbitrum.io/rpc"
 VAULT_ADDRESS = "0x586C59EF9eAC77f5386fC814Bb6626Ac67f4fAdD"
-DB_PATH = "/home/ubuntu/quant_trading_bot/signals.db"
 
 @st.cache_resource
 def get_onchain_state():
@@ -49,27 +48,35 @@ else:
 st.markdown("---")
 
 st.subheader("📊 Markov Strategy Performance & Signals Log")
-try:
-    conn = sqlite3.connect(DB_PATH)
-    c = conn.cursor()
-    c.execute("SELECT id, timestamp, symbol, regime, win_prob_bps, executed FROM markov_signals ORDER BY id DESC LIMIT 20")
-    rows = c.fetchall()
-    conn.close()
 
-    if rows:
-        st.dataframe(
-            rows,
-            column_config={
-                "0": "ID",
-                "1": "Timestamp",
-                "2": "Symbol",
-                "3": "Regime",
-                "4": "Win Prob (BPS)",
-                "5": "On-Chain Status"
-            },
-            use_container_width=True
-        )
-    else:
-        st.info("No signals found in signals.db")
-except Exception as e:
-    st.error(f"Error reading signals.db: {e}")
+def load_signals():
+    for db_name in ["signals.db", "markov_1.db"]:
+        path = f"/home/ubuntu/quant_trading_bot/{db_name}"
+        if os.path.exists(path) and os.path.getsize(path) > 0:
+            try:
+                conn = sqlite3.connect(path)
+                c = conn.cursor()
+                c.execute("SELECT name FROM sqlite_master WHERE type='table';")
+                tables = [t[0] for t in c.fetchall() if t[0] != 'sqlite_sequence']
+                if tables:
+                    target_table = tables[0]
+                    c.execute(f"SELECT * FROM {target_table} ORDER BY 1 DESC LIMIT 50")
+                    rows = c.fetchall()
+                    c.execute(f"PRAGMA table_info({target_table})")
+                    cols = [col[1] for col in c.fetchall()]
+                    conn.close()
+                    if rows:
+                        return rows, cols, db_name, target_table
+            except Exception:
+                pass
+    return None, None, None, None
+
+rows, cols, active_db, active_table = load_signals()
+
+if rows:
+    st.caption(f"Source: Database  | Table ")
+    import pandas as pd
+    df = pd.DataFrame(rows, columns=cols)
+    st.dataframe(df, use_container_width=True)
+else:
+    st.info("No active signal logs found across signals.db or markov_1.db.")
