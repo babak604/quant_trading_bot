@@ -1,5 +1,6 @@
 import sqlite3, os
 import streamlit as st
+import pandas as pd
 from web3 import Web3
 
 st.set_page_config(page_title="QuantVault Strategy Engine", layout="wide")
@@ -49,34 +50,24 @@ st.markdown("---")
 
 st.subheader("📊 Markov Strategy Performance & Signals Log")
 
-def load_signals():
-    for db_name in ["signals.db", "markov_1.db"]:
-        path = f"/home/ubuntu/quant_trading_bot/{db_name}"
+def load_data():
+    for db_file in ["signals.db", "markov_1.db"]:
+        path = f"/home/ubuntu/quant_trading_bot/{db_file}"
         if os.path.exists(path) and os.path.getsize(path) > 0:
             try:
                 conn = sqlite3.connect(path)
-                c = conn.cursor()
-                c.execute("SELECT name FROM sqlite_master WHERE type='table';")
-                tables = [t[0] for t in c.fetchall() if t[0] != 'sqlite_sequence']
-                if tables:
-                    target_table = tables[0]
-                    c.execute(f"SELECT * FROM {target_table} ORDER BY 1 DESC LIMIT 50")
-                    rows = c.fetchall()
-                    c.execute(f"PRAGMA table_info({target_table})")
-                    cols = [col[1] for col in c.fetchall()]
-                    conn.close()
-                    if rows:
-                        return rows, cols, db_name, target_table
+                df = pd.read_sql_query("SELECT * FROM markov_signals ORDER BY id DESC LIMIT 50", conn)
+                conn.close()
+                if not df.empty:
+                    return df, db_file
             except Exception:
                 pass
-    return None, None, None, None
+    return pd.DataFrame(), None
 
-rows, cols, active_db, active_table = load_signals()
+df, source_db = load_data()
 
-if rows:
-    st.caption(f"Source: Database  | Table ")
-    import pandas as pd
-    df = pd.DataFrame(rows, columns=cols)
+if not df.empty:
+    st.caption(f"Connected to database source:  ({len(df)} recent records displayed)")
     st.dataframe(df, use_container_width=True)
 else:
-    st.info("No active signal logs found across signals.db or markov_1.db.")
+    st.info("No signal data found across database files.")
