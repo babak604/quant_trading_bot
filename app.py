@@ -13,7 +13,6 @@ VAULT_ADDRESS = Web3.to_checksum_address("0xDc68b9285A395AE027a0eD82e937A8e3832F
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "signals.db")
 
-# Read Secret RPC first
 secret_rpc = ""
 try:
     secret_rpc = st.secrets["web3"]["rpc_url"].strip()
@@ -29,16 +28,16 @@ RPC_ENDPOINTS = [
 ]
 
 def get_onchain_state():
-    last_err = ""
+    rpc_logs = []
     for rpc in RPC_ENDPOINTS:
-        if not rpc or "YOUR_KEY" in rpc:
+        if not rpc or "YOUR_" in rpc:
             continue
         try:
             provider = HTTPProvider(
                 rpc, 
                 request_kwargs={
-                    'timeout': 8,
-                    'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+                    'timeout': 6,
+                    'headers': {'User-Agent': 'Mozilla/5.0'}
                 }
             )
             w3 = Web3(provider)
@@ -54,18 +53,23 @@ def get_onchain_state():
                 regime = contract.functions.currentRegime().call() or "UNINITIALIZED"
                 win_prob = contract.functions.currentWinProbBps().call()
                 is_paused = contract.functions.paused().call()
-                return True, regime, win_prob, total_assets, is_paused, rpc
+                rpc_logs.append(f"SUCCESS: {rpc[:35]}...")
+                return True, regime, win_prob, total_assets, is_paused, rpc_logs
+            else:
+                rpc_logs.append(f"FAIL (Not Connected): {rpc[:35]}...")
         except Exception as e:
-            last_err = str(e)
+            rpc_logs.append(f"FAIL ({type(e).__name__}): {rpc[:35]}...")
             continue
-    return False, "RPC_DISCONNECTED", 0, 0, False, last_err
+    return False, "RPC_DISCONNECTED", 0, 0, False, rpc_logs
 
-connected, regime, win_prob, total_assets, is_paused, rpc_info = get_onchain_state()
+connected, regime, win_prob, total_assets, is_paused, rpc_logs = get_onchain_state()
 
 st.sidebar.markdown(f"**Web3 Status:** `{'Connected' if connected else 'Disconnected'}`")
 st.sidebar.markdown(f"**Target Chain:** Arbitrum Sepolia")
-if connected:
-    st.sidebar.caption(f"RPC: `{rpc_info[:30]}...`")
+
+with st.sidebar.expander("🔍 RPC Diagnostics"):
+    for log in rpc_logs:
+        st.write(log)
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total Vault Assets", f"${total_assets / 1e6:,.2f} USDC")
