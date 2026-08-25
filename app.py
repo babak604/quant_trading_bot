@@ -2,22 +2,24 @@ import os
 import sqlite3
 import streamlit as st
 from web3 import Web3
+from web3.providers.rpc import HTTPProvider
 
 st.set_page_config(page_title="QuantVault Strategy Engine", layout="wide")
 
 st.title("⚡ QuantVault | Markov Strategy & Arbitrum Engine")
 st.caption("Target Contract: 0xDc68b9285A395AE027a0eD82e937A8e3832F17CA (Arbitrum Sepolia)")
 
-VAULT_ADDRESS = "0xDc68b9285A395AE027a0eD82e937A8e3832F17CA"
+VAULT_ADDRESS = Web3.to_checksum_address("0xDc68b9285A395AE027a0eD82e937A8e3832F17CA")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "signals.db")
 
-# Reliable RPC Endpoints Array
+# Ordered list of reliable endpoints
 RPC_ENDPOINTS = [
     st.secrets.get("web3", {}).get("rpc_url", ""),
     "https://sepolia-rollup.arbitrum.io/rpc",
-    "https://arbitrum-sepolia.blockpi.network/v1/rpc/public",
-    "https://endpoints.omniatech.io/v1/arbitrum/sepolia/public"
+    "https://arbitrum-sepolia.publicnode.com",
+    "https://endpoints.omniatech.io/v1/arbitrum/sepolia/public",
+    "https://rpc.ankr.com/arbitrum_sepolia"
 ]
 
 def get_onchain_state():
@@ -25,7 +27,15 @@ def get_onchain_state():
         if not rpc or "YOUR_API_KEY" in rpc:
             continue
         try:
-            w3 = Web3(Web3.HTTPProvider(rpc, request_kwargs={'timeout': 5}))
+            # Custom HTTP Provider with User-Agent & 10s timeout to bypass cloud blocking
+            provider = HTTPProvider(
+                rpc, 
+                request_kwargs={
+                    'timeout': 10,
+                    'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+                }
+            )
+            w3 = Web3(provider)
             if w3.is_connected():
                 abi = [
                     {"inputs": [], "name": "totalAssets", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
