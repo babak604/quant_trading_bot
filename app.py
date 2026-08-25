@@ -6,10 +6,10 @@ from web3 import Web3
 st.set_page_config(page_title="QuantVault Strategy Engine", layout="wide")
 
 st.title("⚡ QuantVault | Markov Strategy & Arbitrum Engine")
-st.caption("Target Contract: 0x586C59EF9eAC77f5386fC814Bb6626Ac67f4fAdD (Arbitrum Sepolia)")
+st.caption("Target Contract: 0xDc68b9285A395AE027a0eD82e937A8e3832F17CA (Arbitrum Sepolia)")
 
 RPC_URL = st.secrets.get("web3", {}).get("rpc_url", "https://sepolia-rollup.arbitrum.io/rpc")
-VAULT_ADDRESS = "0x586C59EF9eAC77f5386fC814Bb6626Ac67f4fAdD"
+VAULT_ADDRESS = "0xDc68b9285A395AE027a0eD82e937A8e3832F17CA"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "signals.db")
@@ -19,30 +19,32 @@ def get_onchain_state():
     try:
         w3 = Web3(Web3.HTTPProvider(RPC_URL))
         if not w3.is_connected():
-            return False, "RPC_DISCONNECTED", 0, False
+            return False, "RPC_DISCONNECTED", 0, 0, False
             
         abi = [
+            {"inputs": [], "name": "totalAssets", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
             {"inputs": [], "name": "currentRegime", "outputs": [{"type": "string"}], "stateMutability": "view", "type": "function"},
             {"inputs": [], "name": "currentWinProbBps", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
             {"inputs": [], "name": "paused", "outputs": [{"type": "bool"}], "stateMutability": "view", "type": "function"}
         ]
         contract = w3.eth.contract(address=VAULT_ADDRESS, abi=abi)
+        total_assets = contract.functions.totalAssets().call()
         regime = contract.functions.currentRegime().call() or "UNINITIALIZED"
         win_prob = contract.functions.currentWinProbBps().call()
         is_paused = contract.functions.paused().call()
-        return True, regime, win_prob, is_paused
+        return True, regime, win_prob, total_assets, is_paused
     except Exception as e:
-        return False, str(e), 0, False
+        return False, str(e), 0, 0, False
 
-connected, regime, win_prob, is_paused = get_onchain_state()
+connected, regime, win_prob, total_assets, is_paused = get_onchain_state()
 
 st.sidebar.markdown(f"**Web3 Status:** `{'Connected' if connected else 'Disconnected'}`")
 st.sidebar.markdown(f"**Target Chain:** Arbitrum Sepolia")
 
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("On-Chain Regime", regime)
+col1.metric("Total Vault Assets", f"${total_assets / 1e6:,.2f} USDC")
 col2.metric("Win Probability", f"{win_prob / 100:.2f}%")
-col3.metric("Arbitrum RPC", "Connected" if connected else "Offline")
+col3.metric("On-Chain Regime", regime)
 col4.metric("Circuit Breaker", "PAUSED" if is_paused else "ACTIVE")
 
 st.markdown("---")
