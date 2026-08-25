@@ -24,10 +24,12 @@ RPC_ENDPOINTS = [
     secret_rpc,
     "https://sepolia-rollup.arbitrum.io/rpc",
     "https://arbitrum-sepolia.publicnode.com",
+    "https://endpoints.omniatech.io/v1/arbitrum/sepolia/public",
     "https://rpc.ankr.com/arbitrum_sepolia"
 ]
 
 def get_onchain_state():
+    last_err = ""
     for rpc in RPC_ENDPOINTS:
         if not rpc or "YOUR_KEY" in rpc:
             continue
@@ -52,15 +54,18 @@ def get_onchain_state():
                 regime = contract.functions.currentRegime().call() or "UNINITIALIZED"
                 win_prob = contract.functions.currentWinProbBps().call()
                 is_paused = contract.functions.paused().call()
-                return True, regime, win_prob, total_assets, is_paused
-        except Exception:
+                return True, regime, win_prob, total_assets, is_paused, rpc
+        except Exception as e:
+            last_err = str(e)
             continue
-    return False, "RPC_DISCONNECTED", 0, 0, False
+    return False, "RPC_DISCONNECTED", 0, 0, False, last_err
 
-connected, regime, win_prob, total_assets, is_paused = get_onchain_state()
+connected, regime, win_prob, total_assets, is_paused, rpc_info = get_onchain_state()
 
 st.sidebar.markdown(f"**Web3 Status:** `{'Connected' if connected else 'Disconnected'}`")
 st.sidebar.markdown(f"**Target Chain:** Arbitrum Sepolia")
+if connected:
+    st.sidebar.caption(f"RPC: `{rpc_info[:30]}...`")
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total Vault Assets", f"${total_assets / 1e6:,.2f} USDC")
