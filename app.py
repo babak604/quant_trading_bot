@@ -8,18 +8,27 @@ st.set_page_config(page_title="QuantVault Strategy Engine", layout="wide")
 st.title("⚡ QuantVault | Markov Strategy & Arbitrum Engine")
 st.caption("Target Contract: 0xDc68b9285A395AE027a0eD82e937A8e3832F17CA (Arbitrum Sepolia)")
 
-RPC_URL = st.secrets.get("web3", {}).get("rpc_url", "https://sepolia-rollup.arbitrum.io/rpc")
+# Fallback to public Sepolia RPC if st.secrets is unset or invalid
+DEFAULT_RPC = "https://sepolia-rollup.arbitrum.io/rpc"
+try:
+    RPC_URL = st.secrets.get("web3", {}).get("rpc_url", DEFAULT_RPC)
+except Exception:
+    RPC_URL = DEFAULT_RPC
+
 VAULT_ADDRESS = "0xDc68b9285A395AE027a0eD82e937A8e3832F17CA"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "signals.db")
 
 @st.cache_resource
-def get_onchain_state():
+def get_onchain_state(rpc):
     try:
-        w3 = Web3(Web3.HTTPProvider(RPC_URL))
+        w3 = Web3(Web3.HTTPProvider(rpc))
         if not w3.is_connected():
-            return False, "RPC_DISCONNECTED", 0, 0, False
+            # Try fallback endpoint if primary RPC fails
+            w3 = Web3(Web3.HTTPProvider(DEFAULT_RPC))
+            if not w3.is_connected():
+                return False, "RPC_DISCONNECTED", 0, 0, False
             
         abi = [
             {"inputs": [], "name": "totalAssets", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
@@ -36,7 +45,7 @@ def get_onchain_state():
     except Exception as e:
         return False, str(e), 0, 0, False
 
-connected, regime, win_prob, total_assets, is_paused = get_onchain_state()
+connected, regime, win_prob, total_assets, is_paused = get_onchain_state(RPC_URL)
 
 st.sidebar.markdown(f"**Web3 Status:** `{'Connected' if connected else 'Disconnected'}`")
 st.sidebar.markdown(f"**Target Chain:** Arbitrum Sepolia")
