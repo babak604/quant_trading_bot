@@ -1,36 +1,5 @@
-# Environment files containing secrets
-.env
-.env.mainnet
-.env.*
-
-# Local databases and logs
-*.db
-*.log
-
-# Python artifacts
+venv/
 __pycache__/
 *.pyc
-venv/
-.venv/
-artifacts/
-cache/
-*.db
-*.log
-.env*
-artifacts/
-cache/
-*.db
-*.log
-.env*
-artifacts/
-cache/
-*.db
-*.log
-.env*
-artifacts/
-cache/
-*.db
-*.log
-.env*
-bore-v0.6.0-x86_64-unknown-linux-musl.tar.gz
-cloudflared.deb
+.env
+signals.db
