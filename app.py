@@ -13,25 +13,29 @@ VAULT_ADDRESS = Web3.to_checksum_address("0xDc68b9285A395AE027a0eD82e937A8e3832F
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "signals.db")
 
-# Ordered list of reliable endpoints
+# Read Secret RPC first
+secret_rpc = ""
+try:
+    secret_rpc = st.secrets["web3"]["rpc_url"].strip()
+except Exception:
+    pass
+
 RPC_ENDPOINTS = [
-    st.secrets.get("web3", {}).get("rpc_url", ""),
+    secret_rpc,
     "https://sepolia-rollup.arbitrum.io/rpc",
     "https://arbitrum-sepolia.publicnode.com",
-    "https://endpoints.omniatech.io/v1/arbitrum/sepolia/public",
     "https://rpc.ankr.com/arbitrum_sepolia"
 ]
 
 def get_onchain_state():
     for rpc in RPC_ENDPOINTS:
-        if not rpc or "YOUR_API_KEY" in rpc:
+        if not rpc or "YOUR_KEY" in rpc:
             continue
         try:
-            # Custom HTTP Provider with User-Agent & 10s timeout to bypass cloud blocking
             provider = HTTPProvider(
                 rpc, 
                 request_kwargs={
-                    'timeout': 10,
+                    'timeout': 8,
                     'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
                 }
             )
