@@ -8,44 +8,42 @@ st.set_page_config(page_title="QuantVault Strategy Engine", layout="wide")
 st.title("⚡ QuantVault | Markov Strategy & Arbitrum Engine")
 st.caption("Target Contract: 0xDc68b9285A395AE027a0eD82e937A8e3832F17CA (Arbitrum Sepolia)")
 
-# Fallback to public Sepolia RPC if st.secrets is unset or invalid
-DEFAULT_RPC = "https://sepolia-rollup.arbitrum.io/rpc"
-try:
-    RPC_URL = st.secrets.get("web3", {}).get("rpc_url", DEFAULT_RPC)
-except Exception:
-    RPC_URL = DEFAULT_RPC
-
 VAULT_ADDRESS = "0xDc68b9285A395AE027a0eD82e937A8e3832F17CA"
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "signals.db")
 
-@st.cache_resource
-def get_onchain_state(rpc):
-    try:
-        w3 = Web3(Web3.HTTPProvider(rpc))
-        if not w3.is_connected():
-            # Try fallback endpoint if primary RPC fails
-            w3 = Web3(Web3.HTTPProvider(DEFAULT_RPC))
-            if not w3.is_connected():
-                return False, "RPC_DISCONNECTED", 0, 0, False
-            
-        abi = [
-            {"inputs": [], "name": "totalAssets", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
-            {"inputs": [], "name": "currentRegime", "outputs": [{"type": "string"}], "stateMutability": "view", "type": "function"},
-            {"inputs": [], "name": "currentWinProbBps", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
-            {"inputs": [], "name": "paused", "outputs": [{"type": "bool"}], "stateMutability": "view", "type": "function"}
-        ]
-        contract = w3.eth.contract(address=VAULT_ADDRESS, abi=abi)
-        total_assets = contract.functions.totalAssets().call()
-        regime = contract.functions.currentRegime().call() or "UNINITIALIZED"
-        win_prob = contract.functions.currentWinProbBps().call()
-        is_paused = contract.functions.paused().call()
-        return True, regime, win_prob, total_assets, is_paused
-    except Exception as e:
-        return False, str(e), 0, 0, False
+# Reliable RPC Endpoints Array
+RPC_ENDPOINTS = [
+    st.secrets.get("web3", {}).get("rpc_url", ""),
+    "https://sepolia-rollup.arbitrum.io/rpc",
+    "https://arbitrum-sepolia.blockpi.network/v1/rpc/public",
+    "https://endpoints.omniatech.io/v1/arbitrum/sepolia/public"
+]
 
-connected, regime, win_prob, total_assets, is_paused = get_onchain_state(RPC_URL)
+def get_onchain_state():
+    for rpc in RPC_ENDPOINTS:
+        if not rpc or "YOUR_API_KEY" in rpc:
+            continue
+        try:
+            w3 = Web3(Web3.HTTPProvider(rpc, request_kwargs={'timeout': 5}))
+            if w3.is_connected():
+                abi = [
+                    {"inputs": [], "name": "totalAssets", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
+                    {"inputs": [], "name": "currentRegime", "outputs": [{"type": "string"}], "stateMutability": "view", "type": "function"},
+                    {"inputs": [], "name": "currentWinProbBps", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
+                    {"inputs": [], "name": "paused", "outputs": [{"type": "bool"}], "stateMutability": "view", "type": "function"}
+                ]
+                contract = w3.eth.contract(address=VAULT_ADDRESS, abi=abi)
+                total_assets = contract.functions.totalAssets().call()
+                regime = contract.functions.currentRegime().call() or "UNINITIALIZED"
+                win_prob = contract.functions.currentWinProbBps().call()
+                is_paused = contract.functions.paused().call()
+                return True, regime, win_prob, total_assets, is_paused
+        except Exception:
+            continue
+    return False, "RPC_DISCONNECTED", 0, 0, False
+
+connected, regime, win_prob, total_assets, is_paused = get_onchain_state()
 
 st.sidebar.markdown(f"**Web3 Status:** `{'Connected' if connected else 'Disconnected'}`")
 st.sidebar.markdown(f"**Target Chain:** Arbitrum Sepolia")
