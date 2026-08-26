@@ -1,0 +1,810 @@
+2026-08-20 17:39:25,435 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:39:25,435 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:39:25,586 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645620
+2026-08-20 17:39:25,586 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:39:25,586 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:39:25,586 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:39:25,737 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:39:25,738 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:39:36,720 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:39:36,720 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:39:36,850 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645663
+2026-08-20 17:39:36,851 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:39:36,851 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:39:36,851 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:39:36,994 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:39:36,994 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:39:48,043 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:39:48,044 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:39:48,189 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645709
+2026-08-20 17:39:48,189 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:39:48,189 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:39:48,189 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:39:48,325 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:39:48,325 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:40:00,342 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:40:00,342 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:40:00,493 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645757
+2026-08-20 17:40:00,493 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:40:00,494 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:40:00,494 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:40:00,657 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:40:00,657 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:40:11,472 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:40:11,472 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:40:11,629 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645799
+2026-08-20 17:40:11,629 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:40:11,630 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:40:11,630 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:40:11,785 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:40:11,785 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:40:23,080 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:40:23,080 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:40:23,228 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645850
+2026-08-20 17:40:23,228 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:40:23,228 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:40:23,228 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:40:23,413 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:40:23,414 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:40:34,245 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:40:34,245 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:40:34,384 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645892
+2026-08-20 17:40:34,385 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:40:34,385 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:40:34,385 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:40:34,533 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:40:34,533 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:40:45,566 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:40:45,567 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:40:45,732 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645940
+2026-08-20 17:40:45,732 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:40:45,732 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:40:45,732 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:40:45,905 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:40:45,905 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:40:56,808 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:40:56,808 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:40:56,973 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496645982
+2026-08-20 17:40:56,973 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:40:56,973 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:40:56,973 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:40:57,141 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:40:57,141 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:41:09,166 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:41:09,166 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:41:09,327 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646031
+2026-08-20 17:41:09,327 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:41:09,327 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:41:09,327 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:41:09,481 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:41:09,481 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:41:19,580 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:41:19,581 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:41:19,774 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646074
+2026-08-20 17:41:19,774 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:41:19,774 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:41:19,774 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:41:19,922 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:41:19,923 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:41:31,875 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:41:31,875 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:41:32,029 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646122
+2026-08-20 17:41:32,030 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:41:32,030 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:41:32,030 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:41:32,191 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:41:32,191 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:41:44,111 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:41:44,111 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:41:44,246 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646168
+2026-08-20 17:41:44,247 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:41:44,247 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:41:44,247 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:41:44,386 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:41:44,386 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:41:54,415 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:41:54,415 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:41:54,544 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646213
+2026-08-20 17:41:54,544 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:41:54,545 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:41:54,545 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:41:54,677 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:41:54,677 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:42:06,686 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:42:06,686 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:42:06,823 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646259
+2026-08-20 17:42:06,824 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:42:06,824 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:42:06,824 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:42:06,979 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:42:06,980 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:42:18,010 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:42:18,010 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:42:18,150 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646308
+2026-08-20 17:42:18,150 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:42:18,150 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:42:18,150 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:42:18,291 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:42:18,292 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:42:29,190 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:42:29,190 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:42:29,331 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646352
+2026-08-20 17:42:29,331 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:42:29,331 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:42:29,332 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:42:29,478 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:42:29,478 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:42:41,466 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:42:41,466 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:42:41,601 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646398
+2026-08-20 17:42:41,601 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:42:41,601 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:42:41,601 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:42:41,742 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:42:41,742 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:42:52,052 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:42:52,052 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:42:52,202 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646442
+2026-08-20 17:42:52,203 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:42:52,203 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:42:52,203 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:42:52,361 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:42:52,361 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:43:03,236 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:43:03,237 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:43:03,368 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646489
+2026-08-20 17:43:03,368 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:43:03,368 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:43:03,368 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:43:03,501 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:43:03,502 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:43:15,531 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:43:15,532 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:43:15,669 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646533
+2026-08-20 17:43:15,670 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:43:15,670 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:43:15,670 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:43:15,806 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:43:15,806 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:43:25,827 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:43:25,827 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:43:25,984 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646577
+2026-08-20 17:43:25,985 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:43:25,985 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:43:25,985 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:43:26,127 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:43:26,127 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:43:38,086 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:43:38,087 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:43:38,219 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646626
+2026-08-20 17:43:38,219 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:43:38,219 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:43:38,219 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:43:38,346 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:43:38,346 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:43:49,383 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:43:49,384 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:43:49,526 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646668
+2026-08-20 17:43:49,526 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:43:49,526 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:43:49,526 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:43:49,675 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:43:49,675 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:44:00,579 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:44:00,579 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:44:00,742 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646716
+2026-08-20 17:44:00,743 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-20 17:44:00,743 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-20 17:44:00,743 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-20 17:44:00,912 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:44:00,912 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:44:11,795 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:44:11,795 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:44:11,965 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646758
+2026-08-20 17:44:11,965 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:44:11,966 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:44:12,146 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:44:12,147 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:44:23,433 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:44:23,434 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:44:23,584 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646805
+2026-08-20 17:44:23,584 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:44:23,584 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:44:23,719 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:44:23,719 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:44:33,984 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:44:33,984 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:44:34,106 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646849
+2026-08-20 17:44:34,107 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:44:34,107 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:44:34,232 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:44:34,232 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:44:46,670 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:44:46,670 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:44:46,816 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646898
+2026-08-20 17:44:46,816 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:44:46,816 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:44:46,964 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:44:46,964 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:44:49,787 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:44:49,787 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:44:49,935 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646910
+2026-08-20 17:44:49,935 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:44:49,935 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:44:50,085 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:44:50,085 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:45:01,268 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:45:01,268 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:45:01,407 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496646957
+2026-08-20 17:45:01,408 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:45:01,408 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:45:01,562 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:45:01,563 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:45:12,607 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:45:12,607 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:45:12,767 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647001
+2026-08-20 17:45:12,768 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:45:12,768 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:45:12,926 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:45:12,927 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:45:25,290 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:45:25,290 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:45:25,429 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647050
+2026-08-20 17:45:25,430 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:45:25,430 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:45:25,570 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:45:25,570 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:45:35,623 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:45:35,623 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:45:35,775 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647094
+2026-08-20 17:45:35,775 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:45:35,775 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:45:35,920 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:45:35,921 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:45:46,917 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:45:46,917 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x572786Eb123403ed02A31798AeBFe3E1B3E6c89e
+2026-08-20 17:45:47,086 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647138
+2026-08-20 17:45:47,087 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:45:47,087 [INFO] [PASS] Keeper ETH Balance: 0.000755 ETH
+2026-08-20 17:45:47,254 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:45:47,254 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:45:57,194 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:45:57,194 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:45:57,358 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647180
+2026-08-20 17:45:57,358 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:45:57,358 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:45:57,534 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:45:57,535 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:46:09,481 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:46:09,481 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:46:09,646 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647228
+2026-08-20 17:46:09,647 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:46:09,647 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:46:09,808 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:46:09,808 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:46:20,641 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:46:20,641 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:46:20,779 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647267
+2026-08-20 17:46:20,780 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:46:20,780 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:46:20,931 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:46:20,931 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:46:31,944 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:46:31,944 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:46:32,094 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647316
+2026-08-20 17:46:32,094 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:46:32,094 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:46:32,243 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:46:32,243 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:46:43,279 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:46:43,279 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:46:43,432 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647360
+2026-08-20 17:46:43,432 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:46:43,432 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:46:43,587 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:46:43,587 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:46:54,479 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:46:54,480 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:46:54,613 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647399
+2026-08-20 17:46:54,614 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:46:54,614 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:46:54,750 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:46:54,750 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:47:04,667 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:47:04,667 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:47:04,817 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647442
+2026-08-20 17:47:04,818 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:47:04,818 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:47:04,971 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:47:04,972 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:47:16,062 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:47:16,063 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:47:16,216 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647487
+2026-08-20 17:47:16,216 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:47:16,216 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:47:16,357 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:47:16,357 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:47:27,179 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:47:27,179 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:47:27,319 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647529
+2026-08-20 17:47:27,319 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:47:27,320 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:47:27,465 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:47:27,465 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:47:37,446 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:47:37,446 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:47:37,590 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647573
+2026-08-20 17:47:37,591 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:47:37,591 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:47:37,742 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:47:37,742 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:47:46,803 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:47:46,804 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:47:46,945 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647609
+2026-08-20 17:47:46,946 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:47:46,946 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:47:47,094 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:47:47,094 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:47:59,058 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:47:59,058 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:47:59,233 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647652
+2026-08-20 17:47:59,233 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:47:59,233 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:47:59,401 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:47:59,401 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:48:09,494 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:48:09,494 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:48:09,632 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647695
+2026-08-20 17:48:09,632 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:48:09,632 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:48:09,789 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:48:09,789 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:48:21,707 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:48:21,707 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:48:21,844 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647742
+2026-08-20 17:48:21,844 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:48:21,844 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:48:21,983 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:48:21,983 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:48:32,991 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:48:32,992 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:48:33,156 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647784
+2026-08-20 17:48:33,157 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:48:33,157 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:48:33,319 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:48:33,320 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:48:44,550 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:48:44,551 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:48:44,699 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647831
+2026-08-20 17:48:44,700 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:48:44,700 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:48:44,853 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:48:44,853 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:48:55,720 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:48:55,720 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:48:55,874 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647875
+2026-08-20 17:48:55,875 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:48:55,875 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:48:56,019 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:48:56,019 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:49:07,014 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:49:07,014 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:49:07,163 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647922
+2026-08-20 17:49:07,163 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:49:07,163 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:49:07,310 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:49:07,310 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:49:19,337 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:49:19,338 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:49:19,478 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496647966
+2026-08-20 17:49:19,478 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:49:19,478 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:49:19,626 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:49:19,626 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:49:30,747 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:49:30,747 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:49:30,908 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648010
+2026-08-20 17:49:30,908 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:49:30,908 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:49:31,068 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:49:31,069 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:49:40,965 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:49:40,966 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:49:41,114 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648060
+2026-08-20 17:49:41,114 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:49:41,114 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:49:41,267 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:49:41,267 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:49:52,322 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:49:52,322 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:49:52,487 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648102
+2026-08-20 17:49:52,487 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:49:52,487 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:49:52,642 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:49:52,643 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:50:04,552 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:50:04,553 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:50:04,694 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648150
+2026-08-20 17:50:04,695 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:50:04,695 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:50:04,845 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:50:04,845 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:50:15,729 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:50:15,729 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:50:15,885 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648196
+2026-08-20 17:50:15,885 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:50:15,885 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:50:16,037 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:50:16,037 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:50:27,004 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:50:27,005 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:50:27,153 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648241
+2026-08-20 17:50:27,154 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:50:27,154 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:50:27,306 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:50:27,306 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:50:38,213 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:50:38,213 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:50:38,368 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648286
+2026-08-20 17:50:38,368 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:50:38,368 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:50:38,523 [ERROR] [ERROR] Pre-flight verification failed: ('execution reverted', '0x')
+2026-08-20 17:50:38,523 [ERROR] [FAIL] Keeper health check failed. Exiting.
+2026-08-20 17:50:49,415 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:50:49,415 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:50:49,580 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496648330
+2026-08-20 17:50:49,580 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:50:49,580 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:50:49,742 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-20 17:50:49,909 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-20 17:54:22,297 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:54:22,297 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:54:22,452 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496649168
+2026-08-20 17:54:22,453 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:54:22,453 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:54:22,600 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-20 17:54:22,753 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-20 17:54:22,753 [INFO] [*] Entering continuous signal polling loop...
+2026-08-20 17:54:27,166 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 17:54:27,167 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 17:54:27,326 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496649188
+2026-08-20 17:54:27,327 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 17:54:27,327 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 17:54:27,487 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-20 17:54:27,642 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-20 17:54:27,642 [INFO] [*] Entering continuous signal polling loop...
+2026-08-20 17:56:10,031 [INFO] [*] New Unexecuted Signal Found [ID 14]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 17:56:10,046 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 17:56:10,322 [ERROR] [ERROR] Execution failed for signal 14: ('execution reverted', '0x')
+2026-08-20 17:56:13,327 [INFO] [*] New Unexecuted Signal Found [ID 14]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 17:56:13,328 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 17:56:13,563 [ERROR] [ERROR] Execution failed for signal 14: ('execution reverted', '0x')
+2026-08-20 18:01:34,406 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-20 18:01:34,406 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-20 18:01:34,553 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496650891
+2026-08-20 18:01:34,553 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-20 18:01:34,553 [INFO] [PASS] Keeper ETH Balance: 0.000721 ETH
+2026-08-20 18:01:34,700 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-20 18:01:34,853 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-20 18:01:34,854 [INFO] [*] Entering continuous signal polling loop...
+2026-08-20 18:02:21,867 [INFO] [*] New Unexecuted Signal Found [ID 15]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:02:21,867 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:02:22,222 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:02:22,222 [WARNING] [!] Marking signal 15 as executed to prevent infinite retry loop.
+2026-08-20 18:02:22,233 [INFO] [+] Signal ID 15 marked as EXECUTED in database.
+2026-08-20 18:04:30,448 [INFO] [*] New Unexecuted Signal Found [ID 16]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:04:30,448 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:04:30,706 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:04:30,707 [WARNING] [!] Marking signal 16 as executed to prevent infinite retry loop.
+2026-08-20 18:04:30,729 [INFO] [+] Signal ID 16 marked as EXECUTED in database.
+2026-08-20 18:04:50,789 [INFO] [*] New Unexecuted Signal Found [ID 17]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:04:50,789 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:04:51,177 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:04:51,177 [WARNING] [!] Marking signal 17 as executed to prevent infinite retry loop.
+2026-08-20 18:04:51,184 [INFO] [+] Signal ID 17 marked as EXECUTED in database.
+2026-08-20 18:06:24,354 [INFO] [*] New Unexecuted Signal Found [ID 18]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:06:24,354 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:06:24,641 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:06:24,642 [WARNING] [!] Marking signal 18 as executed to prevent infinite retry loop.
+2026-08-20 18:06:24,651 [INFO] [+] Signal ID 18 marked as EXECUTED in database.
+2026-08-20 18:11:51,585 [INFO] [*] New Unexecuted Signal Found [ID 19]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:11:51,588 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:11:51,878 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:11:51,879 [WARNING] [!] Marking signal 19 as executed to prevent infinite retry loop.
+2026-08-20 18:11:51,890 [INFO] [+] Signal ID 19 marked as EXECUTED in database.
+2026-08-20 18:13:51,002 [INFO] [*] New Unexecuted Signal Found [ID 20]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:13:51,003 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:13:51,273 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:13:51,273 [WARNING] [!] Marking signal 20 as executed to prevent infinite retry loop.
+2026-08-20 18:13:51,297 [INFO] [+] Signal ID 20 marked as EXECUTED in database.
+2026-08-20 18:17:53,011 [INFO] [*] New Unexecuted Signal Found [ID 21]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:17:53,027 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:17:53,303 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:17:53,304 [WARNING] [!] Marking signal 21 as executed to prevent infinite retry loop.
+2026-08-20 18:17:53,326 [INFO] [+] Signal ID 21 marked as EXECUTED in database.
+2026-08-20 18:19:32,742 [INFO] [*] New Unexecuted Signal Found [ID 22]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:19:32,742 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:19:33,001 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:19:33,001 [WARNING] [!] Marking signal 22 as executed to prevent infinite retry loop.
+2026-08-20 18:19:33,022 [INFO] [+] Signal ID 22 marked as EXECUTED in database.
+2026-08-20 18:20:36,902 [INFO] [*] New Unexecuted Signal Found [ID 23]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:20:36,903 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:20:37,161 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:20:37,161 [WARNING] [!] Marking signal 23 as executed to prevent infinite retry loop.
+2026-08-20 18:20:37,169 [INFO] [+] Signal ID 23 marked as EXECUTED in database.
+2026-08-20 18:35:19,355 [INFO] [*] New Unexecuted Signal Found [ID 24]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:35:19,358 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:35:19,734 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:35:19,735 [WARNING] [!] Marking signal 24 as executed to prevent infinite retry loop.
+2026-08-20 18:35:19,743 [INFO] [+] Signal ID 24 marked as EXECUTED in database.
+2026-08-20 18:39:47,708 [INFO] [*] New Unexecuted Signal Found [ID 25]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:39:47,709 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:39:47,988 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:39:47,988 [WARNING] [!] Marking signal 25 as executed to prevent infinite retry loop.
+2026-08-20 18:39:48,011 [INFO] [+] Signal ID 25 marked as EXECUTED in database.
+2026-08-20 18:51:09,522 [INFO] [*] New Unexecuted Signal Found [ID 26]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:51:09,537 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:51:10,921 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:51:10,921 [WARNING] [!] Marking signal 26 as executed to prevent infinite retry loop.
+2026-08-20 18:51:10,943 [INFO] [+] Signal ID 26 marked as EXECUTED in database.
+2026-08-20 18:59:01,462 [INFO] [*] New Unexecuted Signal Found [ID 27]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 18:59:01,477 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 18:59:01,829 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 18:59:01,829 [WARNING] [!] Marking signal 27 as executed to prevent infinite retry loop.
+2026-08-20 18:59:01,850 [INFO] [+] Signal ID 27 marked as EXECUTED in database.
+2026-08-20 19:08:02,201 [INFO] [*] New Unexecuted Signal Found [ID 28]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 19:08:02,205 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 19:08:02,599 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 19:08:02,599 [WARNING] [!] Marking signal 28 as executed to prevent infinite retry loop.
+2026-08-20 19:08:02,609 [INFO] [+] Signal ID 28 marked as EXECUTED in database.
+2026-08-20 19:13:02,945 [INFO] [*] New Unexecuted Signal Found [ID 29]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-20 19:13:02,945 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-20 19:13:03,209 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-20 19:13:03,210 [WARNING] [!] Marking signal 29 as executed to prevent infinite retry loop.
+2026-08-20 19:13:03,219 [INFO] [+] Signal ID 29 marked as EXECUTED in database.
+2026-08-21 11:35:47,685 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 11:35:47,686 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-21 11:35:47,695 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 11:35:47,696 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-21 11:35:47,832 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496903942
+2026-08-21 11:35:47,833 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-21 11:35:47,833 [INFO] [PASS] Keeper ETH Balance: 0.000714 ETH
+2026-08-21 11:35:47,859 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496903942
+2026-08-21 11:35:47,859 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-21 11:35:47,859 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-21 11:35:47,859 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-21 11:35:47,978 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-21 11:35:48,073 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 11:35:48,128 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-21 11:35:48,129 [INFO] [*] Entering continuous signal polling loop...
+2026-08-21 11:35:48,283 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 11:35:48,284 [INFO] [*] Entering continuous signal polling loop...
+2026-08-21 11:53:00,631 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 11:53:00,633 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-21 11:53:00,783 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496908074
+2026-08-21 11:53:00,784 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-21 11:53:00,784 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-21 11:53:00,785 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-21 11:53:00,990 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 11:53:01,200 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 11:53:01,201 [INFO] [*] Entering continuous signal polling loop...
+2026-08-21 11:53:46,477 [INFO] [*] Service stopped manually.
+2026-08-21 11:56:47,957 [INFO] [*] New Unexecuted Signal Found [ID 30]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-21 11:56:47,972 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-21 11:56:48,446 [ERROR] [ERROR] Execution pipeline error for signal 30: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-21 11:56:48,454 [INFO] [+] Signal ID 30 marked as EXECUTED in database.
+2026-08-21 11:56:56,166 [INFO] [*] New Unexecuted Signal Found [ID 31]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-21 11:56:56,166 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-21 11:56:56,447 [ERROR] [ERROR] Execution pipeline error for signal 31: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-21 11:56:56,456 [INFO] [+] Signal ID 31 marked as EXECUTED in database.
+2026-08-21 11:59:39,364 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 11:59:39,364 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-21 11:59:39,517 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496909666
+2026-08-21 11:59:39,517 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-21 11:59:39,517 [INFO] [PASS] Keeper ETH Balance: 0.000714 ETH
+2026-08-21 11:59:39,676 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-21 11:59:39,841 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-21 11:59:39,842 [INFO] [*] Entering continuous signal polling loop...
+2026-08-21 12:03:54,200 [INFO] [*] New Unexecuted Signal Found [ID 32]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-21 12:03:54,201 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-21 12:03:54,781 [INFO] [*] New Unexecuted Signal Found [ID 32]: ETH/USD | BULL_EXPANSION | WinProb: 60.00%
+2026-08-21 12:03:54,782 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-21 12:03:55,049 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-21 12:03:55,049 [WARNING] [!] Marking signal 32 as executed to prevent infinite retry loop.
+2026-08-21 12:03:55,063 [INFO] [+] Signal ID 32 marked as EXECUTED in database.
+2026-08-21 12:03:55,638 [ERROR] [ERROR] Execution pipeline error for signal 32: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-21 12:03:55,639 [INFO] [+] Signal ID 32 marked as EXECUTED in database.
+2026-08-21 17:09:52,619 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 17:09:52,622 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-21 17:09:52,768 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496984042
+2026-08-21 17:09:52,769 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-21 17:09:52,769 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-21 17:09:52,769 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-21 17:09:53,003 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 17:09:53,197 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 17:09:53,198 [INFO] [*] Entering continuous signal polling loop...
+2026-08-21 17:16:39,155 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 17:16:39,155 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-21 17:16:39,311 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496985664
+2026-08-21 17:16:39,311 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-21 17:16:39,311 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-21 17:16:39,311 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-21 17:16:39,535 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 17:16:39,742 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 17:16:39,742 [INFO] [*] Entering continuous signal polling loop...
+2026-08-21 17:17:36,901 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-21 17:17:36,902 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-21 17:17:37,045 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #496985889
+2026-08-21 17:17:37,045 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-21 17:17:37,045 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-21 17:17:37,045 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-21 17:17:37,249 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 17:17:37,462 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-21 17:17:37,462 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 12:57:05,191 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 12:57:05,192 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x4a0462e336b934E2Af0328ca956f0Bf1f2fbD2B3
+2026-08-23 12:57:05,202 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 12:57:05,203 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 12:57:05,205 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 12:57:05,206 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 12:57:05,327 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497611116
+2026-08-23 12:57:05,327 [INFO] [PASS] Keeper Account Loaded: 0xdf953218A73E7d804AdBc631034098990eB26B94
+2026-08-23 12:57:05,327 [INFO] [PASS] Keeper ETH Balance: 0.000013 ETH
+2026-08-23 12:57:05,327 [WARNING] [WARN] Keeper balance (0.000013 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 12:57:05,335 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497611116
+2026-08-23 12:57:05,335 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 12:57:05,335 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 12:57:05,335 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 12:57:05,344 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497611116
+2026-08-23 12:57:05,344 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 12:57:05,345 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 12:57:05,345 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 12:57:05,472 [WARNING] [WARN] Authorization view query skipped: ('execution reverted', '0x')
+2026-08-23 12:57:05,526 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 12:57:05,533 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 12:57:05,623 [INFO] [PASS] Vault Circuit Breaker: UNPAUSED
+2026-08-23 12:57:05,623 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 12:57:05,709 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 12:57:05,709 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 12:57:05,710 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 12:57:05,710 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 14:55:28,408 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 14:55:28,408 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 14:55:28,540 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497639417
+2026-08-23 14:55:28,541 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 14:55:28,541 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 14:55:28,541 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 14:55:28,725 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 14:55:28,899 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 14:55:28,899 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 15:02:57,974 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 15:02:57,974 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 15:02:58,126 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497641188
+2026-08-23 15:02:58,126 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 15:02:58,126 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 15:02:58,127 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 15:02:58,345 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:02:58,546 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:02:58,546 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 15:06:10,167 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 15:06:10,167 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 15:06:10,289 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497641937
+2026-08-23 15:06:10,289 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 15:06:10,289 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 15:06:10,289 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 15:06:10,460 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:06:10,630 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:06:10,630 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 15:11:37,366 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 15:11:37,366 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 15:11:37,485 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497643238
+2026-08-23 15:11:37,485 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 15:11:37,485 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 15:11:37,485 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 15:11:37,654 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:11:37,815 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:11:37,816 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 15:16:05,508 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 15:16:05,508 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 15:16:05,633 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497644309
+2026-08-23 15:16:05,633 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 15:16:05,633 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 15:16:05,633 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 15:16:05,808 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:16:05,971 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:16:05,972 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 15:25:00,055 [INFO] [*] Starting Continuous Markov1Vault Keeper Service...
+2026-08-23 15:25:00,056 [INFO] [*] Target Environment: Chain ID 42161 | Vault 0x673cace1f8104E51ae9bE0fbE605861D21726DD0
+2026-08-23 15:25:00,196 [INFO] [PASS] RPC Connected | Chain ID: 42161 | Block: #497646407
+2026-08-23 15:25:00,196 [INFO] [PASS] Keeper Account Loaded: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+2026-08-23 15:25:00,196 [INFO] [PASS] Keeper ETH Balance: 0.000000 ETH
+2026-08-23 15:25:00,196 [WARNING] [WARN] Keeper balance (0.000000 ETH) is below threshold (0.0005 ETH)!
+2026-08-23 15:25:00,380 [WARNING] [WARN] Authorization view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:25:00,555 [WARNING] [WARN] Circuit breaker view query skipped: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+2026-08-23 15:25:00,555 [INFO] [*] Entering continuous signal polling loop...
+2026-08-23 15:33:10,784 [INFO] [*] New Unexecuted Signal Found [ID 33]: BTC | BULLISH | WinProb: 58.00%
+2026-08-23 15:33:10,790 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 15:33:10,785 [INFO] [*] New Unexecuted Signal Found [ID 33]: BTC | BULLISH | WinProb: 58.00%
+2026-08-23 15:33:10,791 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 15:33:12,194 [ERROR] [ERROR] Execution pipeline error for signal 33: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 15:33:12,204 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 15:33:12,204 [WARNING] [!] Marking signal 33 as executed to prevent infinite retry loop.
+2026-08-23 15:33:12,212 [INFO] [+] Signal ID 33 marked as EXECUTED in database.
+2026-08-23 15:33:12,213 [INFO] [+] Signal ID 33 marked as EXECUTED in database.
+2026-08-23 15:33:55,930 [INFO] [*] New Unexecuted Signal Found [ID 33]: BTC | BULLISH | WinProb: 58.00%
+2026-08-23 15:33:55,930 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 15:33:55,931 [INFO] [*] New Unexecuted Signal Found [ID 33]: BTC | BULLISH | WinProb: 58.00%
+2026-08-23 15:33:55,931 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 15:33:56,155 [ERROR] [ERROR] Execution pipeline error for signal 33: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 15:33:56,163 [INFO] [+] Signal ID 33 marked as EXECUTED in database.
+2026-08-23 15:33:56,164 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 15:33:56,164 [WARNING] [!] Marking signal 33 as executed to prevent infinite retry loop.
+2026-08-23 15:33:56,164 [INFO] [+] Signal ID 33 marked as EXECUTED in database.
+2026-08-23 16:55:28,787 [INFO] [*] New Unexecuted Signal Found [ID 33]: BTC | BULLISH | WinProb: 58.00%
+2026-08-23 16:55:28,797 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 16:55:28,881 [INFO] [*] New Unexecuted Signal Found [ID 33]: BTC | BULLISH | WinProb: 58.00%
+2026-08-23 16:55:28,891 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 16:55:30,297 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 16:55:30,297 [WARNING] [!] Marking signal 33 as executed to prevent infinite retry loop.
+2026-08-23 16:55:30,306 [INFO] [+] Signal ID 33 marked as EXECUTED in database.
+2026-08-23 16:55:30,332 [ERROR] [ERROR] Execution pipeline error for signal 33: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 16:55:30,333 [INFO] [+] Signal ID 33 marked as EXECUTED in database.
+2026-08-23 21:42:11,268 [INFO] [*] New Unexecuted Signal Found [ID 34]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:42:11,275 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:42:11,796 [INFO] [*] New Unexecuted Signal Found [ID 34]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:42:11,801 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:42:11,802 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 21:42:11,803 [WARNING] [!] Marking signal 34 as executed to prevent infinite retry loop.
+2026-08-23 21:42:11,823 [INFO] [+] Signal ID 34 marked as EXECUTED in database.
+2026-08-23 21:42:12,256 [ERROR] [ERROR] Execution pipeline error for signal 34: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 21:42:12,257 [INFO] [+] Signal ID 34 marked as EXECUTED in database.
+2026-08-23 21:43:50,310 [INFO] [*] New Unexecuted Signal Found [ID 35]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:43:50,312 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:43:50,587 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 21:43:50,588 [WARNING] [!] Marking signal 35 as executed to prevent infinite retry loop.
+2026-08-23 21:43:50,609 [INFO] [+] Signal ID 35 marked as EXECUTED in database.
+2026-08-23 21:46:30,779 [INFO] [*] New Unexecuted Signal Found [ID 36]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:46:30,779 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:46:30,913 [INFO] [*] New Unexecuted Signal Found [ID 36]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:46:30,916 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:46:31,030 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 21:46:31,030 [WARNING] [!] Marking signal 36 as executed to prevent infinite retry loop.
+2026-08-23 21:46:31,036 [INFO] [+] Signal ID 36 marked as EXECUTED in database.
+2026-08-23 21:46:31,182 [ERROR] [ERROR] Execution pipeline error for signal 36: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 21:46:31,183 [INFO] [+] Signal ID 36 marked as EXECUTED in database.
+2026-08-23 21:50:27,945 [INFO] [*] New Unexecuted Signal Found [ID 37]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:50:27,947 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:50:28,093 [INFO] [*] New Unexecuted Signal Found [ID 37]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 21:50:28,095 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 21:50:28,231 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 21:50:28,231 [WARNING] [!] Marking signal 37 as executed to prevent infinite retry loop.
+2026-08-23 21:50:28,240 [INFO] [+] Signal ID 37 marked as EXECUTED in database.
+2026-08-23 21:50:28,367 [ERROR] [ERROR] Execution pipeline error for signal 37: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 21:50:28,367 [INFO] [+] Signal ID 37 marked as EXECUTED in database.
+2026-08-23 23:00:06,663 [INFO] [*] New Unexecuted Signal Found [ID 38]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 23:00:06,668 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 23:00:06,816 [INFO] [*] New Unexecuted Signal Found [ID 38]: BTC | BULL_EXPANSION | WinProb: 58.00%
+2026-08-23 23:00:06,822 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 23:00:07,096 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 23:00:07,096 [WARNING] [!] Marking signal 38 as executed to prevent infinite retry loop.
+2026-08-23 23:00:07,103 [INFO] [+] Signal ID 38 marked as EXECUTED in database.
+2026-08-23 23:00:07,376 [ERROR] [ERROR] Execution pipeline error for signal 38: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 23:00:07,376 [INFO] [+] Signal ID 38 marked as EXECUTED in database.
+2026-08-23 23:34:35,161 [INFO] [*] New Unexecuted Signal Found [ID 39]: ETH/USDC | BULL_EXPANSION | WinProb: 85.00%
+2026-08-23 23:34:35,166 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 23:34:35,435 [INFO] [*] New Unexecuted Signal Found [ID 39]: ETH/USDC | BULL_EXPANSION | WinProb: 85.00%
+2026-08-23 23:34:35,439 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 23:34:35,586 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 23:34:35,586 [WARNING] [!] Marking signal 39 as executed to prevent infinite retry loop.
+2026-08-23 23:34:35,593 [INFO] [+] Signal ID 39 marked as EXECUTED in database.
+2026-08-23 23:34:35,860 [ERROR] [ERROR] Execution pipeline error for signal 39: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 23:34:35,861 [INFO] [+] Signal ID 39 marked as EXECUTED in database.
+2026-08-23 23:42:46,513 [INFO] [*] New Unexecuted Signal Found [ID 40]: ETH/USDC | BULL_EXPANSION | WinProb: 85.00%
+2026-08-23 23:42:46,514 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 23:42:46,784 [INFO] [*] New Unexecuted Signal Found [ID 40]: ETH/USDC | BULL_EXPANSION | WinProb: 85.00%
+2026-08-23 23:42:46,784 [INFO] [+] Gate open. Computing dynamic EIP-1559 fees...
+2026-08-23 23:42:47,844 [ERROR] [FAIL] Contract reverted during gas estimation: ('execution reverted', '0x')
+2026-08-23 23:42:47,845 [WARNING] [!] Marking signal 40 as executed to prevent infinite retry loop.
+2026-08-23 23:42:47,863 [INFO] [+] Signal ID 40 marked as EXECUTED in database.
+2026-08-23 23:42:47,884 [ERROR] [ERROR] Execution pipeline error for signal 40: 'SignedTransaction' object has no attribute 'rawTransaction'
+2026-08-23 23:42:47,884 [INFO] [+] Signal ID 40 marked as EXECUTED in database.

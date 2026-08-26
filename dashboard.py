@@ -1,52 +1,65 @@
-import os
-import sqlite3
-import pandas as pd
+import os, time
 import streamlit as st
+import pandas as pd
+from web3 import Web3
+from dotenv import load_dotenv
 
-DB_PATH = os.getenv("DB_PATH", "markov_1.db")
+load_dotenv('/home/ubuntu/quant_trading_bot/.env')
 
-st.set_page_config(page_title="Markov Strategy Dashboard", layout="wide")
-st.title("📊 Markov Strategy Performance & Signals")
+st.set_page_config(page_title="Kinetiq Quant Engine | Arbitrum", layout="wide")
 
-@st.cache_data(ttl=5)
-def load_data():
-    if not os.path.exists(DB_PATH):
-        return pd.DataFrame()
-    
+RPC_URL = os.getenv("ARBITRUM_SEPOLIA_RPC", "https://sepolia-rollup.arbitrum.io/rpc")
+w3 = Web3(Web3.HTTPProvider(RPC_URL))
+
+STYLUS_ENGINE_ADDR = Web3.to_checksum_address("0x6788a96aadd3e16084f61cd391611eb3c69870c7")
+ROUTER_ADAPTER_ADDR = Web3.to_checksum_address("0x7C8068b7bF2Bf8F6e7c3cd4aB6ddd49a2d2ADC1b")
+KEEPER_ADDR = Web3.to_checksum_address("0x70997970C51812dc3A010C7d01b50e0d17dc79C8")
+
+STYLUS_ABI = [
+    {"inputs": [], "name": "getRegime", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
+    {"inputs": [], "name": "get_regime", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
+    {"inputs": [], "name": "getWinProb", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"},
+    {"inputs": [], "name": "get_win_prob", "outputs": [{"type": "uint256"}], "stateMutability": "view", "type": "function"}
+]
+
+engine_contract = w3.eth.contract(address=STYLUS_ENGINE_ADDR, abi=STYLUS_ABI)
+
+st.title("⚡ Kinetiq Quant Engine Dashboard")
+st.caption("Arbitrum Sepolia Live Execution & Regime Telemetry")
+
+def query_stylus(camel_name, snake_name):
     try:
-        conn = sqlite3.connect(DB_PATH)
-        df = pd.read_sql_query("SELECT * FROM trading_signals ORDER BY id DESC LIMIT 200", conn)
-        conn.close()
-        return df
+        return getattr(engine_contract.functions, camel_name)().call()
     except Exception:
-        return pd.DataFrame()
+        return getattr(engine_contract.functions, snake_name)().call()
 
-df = load_data()
+# Fetch live metrics
+try:
+    regime = query_stylus("getRegime", "get_regime")
+    win_prob = query_stylus("getWinProb", "get_win_prob") / 100.0
+    keeper_balance = w3.from_wei(w3.eth.get_balance(KEEPER_ADDR), "ether")
+    rpc_connected = w3.is_connected()
+except Exception as e:
+    st.error(f"Error connecting to contract: {e}")
+    regime, win_prob, keeper_balance, rpc_connected = 0, 0.0, 0.0, False
 
-# Summary Metrics Row
-col1, col2, col3 = st.columns(3)
-col1.metric("Total Signals", len(df) if not df.empty else 0)
+regime_names = {0: "Bear 🔴", 1: "Sideways 🟡", 2: "Bull 🟢"}
 
-if not df.empty and 'win_prob' in df.columns:
-    col2.metric("Avg Win Prob", f"{df['win_prob'].mean():.2%}")
-elif not df.empty and 'win_prob_bps' in df.columns:
-    col2.metric("Avg Win Prob", f"{(df['win_prob_bps'].mean() / 100):.2f}%")
-else:
-    col2.metric("Avg Win Prob", "N/A")
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Active Regime", regime_names.get(regime, "Unknown"))
+col2.metric("Win Probability", f"{win_prob:.2f}%")
+col3.metric("Keeper ETH Gas", f"{keeper_balance:.4f} ETH")
+col4.metric("RPC Status", "Online" if rpc_connected else "Offline")
 
-if not df.empty and 'coin' in df.columns and 'price' in df.columns:
-    eth_df = df[df['coin'] == 'ETH']
-    eth_price_str = f"${eth_df['price'].iloc[0]:.2f}" if not eth_df.empty else "N/A"
-elif not df.empty and 'symbol' in df.columns and 'price' in df.columns:
-    eth_df = df[df['symbol'].str.contains('ETH', case=False, na=False)]
-    eth_price_str = f"${eth_df['price'].iloc[0]:.2f}" if not eth_df.empty else "N/A"
-else:
-    eth_price_str = "N/A"
+st.markdown("---")
+st.subheader("Engine Contracts")
+st.code(f"""Stylus Engine : {STYLUS_ENGINE_ADDR}\nRouter Adapter: {ROUTER_ADAPTER_ADDR}\nKeeper Address: {KEEPER_ADDR}""")
 
-col3.metric("Latest ETH Price", eth_price_str)
-
-st.subheader("Signal Logs")
-if not df.empty:
-    st.dataframe(df, use_container_width=True)
-else:
-    st.info("No signal data found.")
+st.subheader("Strategy Parameters")
+st.json({
+    "Target Pool": "WETH / MOR_USD",
+    "Slippage Tolerance": "0.50%",
+    "Rebalance Step Size": "10 WETH",
+    "Cooldown Period": "300 Seconds",
+    "Min Gas Threshold": "0.005 ETH"
+})
