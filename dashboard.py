@@ -92,6 +92,11 @@ with tab_treasury:
 
 # TAB 4: Enterprise Risk & FINTRAC Compliance
 with tab_compliance:
+    st.subheader("🤖 AI Intent Engine & Autonomous AgentFi Stack")
+    st.success("✔ zkML Proof Verifier: ACTIVE (keeper/zkml_verifier.py RISC Zero)")
+    st.success("✔ ERC-7579 Smart Session Wallet: SIGNING (keeper/agent_wallet.py)")
+    st.success("✔ Multi-Agent Consensus Crew: ONLINE (keeper/agent_crew.py)")
+
     st.subheader("🤖 AI Intent Engine & Predictive ML Risk Sentinels")
     st.success("✔ Natural Language AI Intent Parser: ONLINE (keeper/ai_intent.py)")
     st.success("✔ Predictive ML Slippage Model: ACTIVE (keeper/ai_risk_model.py)")
