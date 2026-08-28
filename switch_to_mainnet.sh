@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "=== Kinetiq Mainnet Switchboard ==="
+echo "=== mor.money Mainnet Switchboard ==="
 
 # 1. Verify Balance
 python3 /home/ubuntu/quant_trading_bot/deploy_mainnet.py
@@ -20,5 +20,5 @@ echo "Switching Systemd Services..."
 sudo systemctl stop quant-keeper
 sudo systemctl enable --now quant-keeper-mainnet
 
-echo "Kinetiq is now live on Arbitrum One Mainnet!"
+echo "mor.money is now live on Arbitrum One Mainnet!"
 journalctl -u quant-keeper-mainnet -f -n 20

@@ -5,8 +5,8 @@ import os
 import time
 from web3 import Web3
 
-st.set_page_config(page_title="Kinetiq Quant Dashboard", layout="wide")
-st.title("⚡ Kinetiq Execution & Telemetry Engine")
+st.set_page_config(page_title="mor.money Quant Dashboard", layout="wide")
+st.title("⚡ mor.money Execution & Telemetry Engine")
 
 # System Overview Bar
 col1, col2, col3, col4 = st.columns(4)

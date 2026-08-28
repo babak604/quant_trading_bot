@@ -8,7 +8,7 @@ MAINNET_RPC = os.getenv("ARBITRUM_MAINNET_RPC", "https://arb1.arbitrum.io/rpc")
 w3 = Web3(Web3.HTTPProvider(MAINNET_RPC))
 
 def verify_mainnet_readiness():
-    print("--- Kinetiq Arbitrum One Mainnet Readiness Verification ---")
+    print("--- mor.money Arbitrum One Mainnet Readiness Verification ---")
     
     # 1. Chain ID Check
     try:
