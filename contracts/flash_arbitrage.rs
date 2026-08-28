@@ -15,7 +15,7 @@ impl FlashArbitrage {
     ) -> bool {
         // 1. Receive Flash Loan from Vault
         // 2. Execute multi-hop DEX routing matrix
-        // 3. Verify net profit > 0 (Revert entire TX if un-profitable)
+        // 3. Verify net profit > 0 (Revert entire TX if unprofitable)
         // 4. Repay Flash Loan + Gas
         true
     }
