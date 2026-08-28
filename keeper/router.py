@@ -32,3 +32,16 @@ def slice_institutional_order_twap(total_amount: float, slices: int = 5, interva
             "max_impact_limit": 0.015 # 1.5% Price Impact Sentinel enforced per slice
         })
     return schedule
+
+
+def itg_issuer_dmm_stabilizer(current_spread_pct: float, target_max_spread: float = 0.010) -> dict:
+    """Calculates required liquidity injection for ITG Issuer Market Making."""
+    needs_stabilization = current_spread_pct > target_max_spread
+    required_bid_depth = 50000.0 if needs_stabilization else 0.0 # $50k flash loan quote depth
+    
+    return {
+        "needs_stabilization": needs_stabilization,
+        "current_spread_pct": current_spread_pct,
+        "flash_loan_injection_usd": required_bid_depth,
+        "action": "INJECT_FLASH_LIQUIDITY" if needs_stabilization else "HOLD"
+    }

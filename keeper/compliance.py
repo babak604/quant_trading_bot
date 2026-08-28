@@ -32,3 +32,19 @@ def export_compliance_csv(records: list, filepath: str = "/home/ubuntu/quant_tra
 if __name__ == "__main__":
     rec = audit_trade_compliance("0xabc123...", "ETH", 12500.00, "Uniswap_v3_Pool")
     export_compliance_csv([rec])
+
+def ciro_best_execution_check(dex_price: float, nbbo_best_bid: float, nbbo_best_ask: float, side: str) -> dict:
+    """Verifies CIRO Rule 3300 Best Execution compliance against NBBO bounds."""
+    compliant = False
+    if side == "BUY" and dex_price <= nbbo_best_ask:
+        compliant = True
+    elif side == "SELL" and dex_price >= nbbo_best_bid:
+        compliant = True
+        
+    return {
+        "rule": "CIRO_3300_BEST_EXECUTION",
+        "side": side,
+        "dex_price": dex_price,
+        "nbbo_bound": nbbo_best_ask if side == "BUY" else nbbo_best_bid,
+        "status": "PASS" if compliant else "FAIL_REJECT"
+    }
