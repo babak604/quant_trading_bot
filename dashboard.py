@@ -68,6 +68,9 @@ with tab_router:
 
 # TAB 3: Corporate Treasury & Staking Yield Engine
 with tab_treasury:
+    st.subheader("📈 Public Yield Vaults & Protocol Fee Collector")
+    st.caption("Auto-Compounding Delta-Neutral Vaults | 2/20 Protocol Fee Capture | Balancer v2 Rebalancing")
+
     st.subheader("📈 NDAX Staking APY vs Delta-Neutral Yield")
     c1, c2 = st.columns(2)
     
