@@ -1,3 +1,10 @@
+
+def calculate_dynamic_slippage(price_impact_pct: float, base_slippage: float = 0.005) -> float:
+    """Calculates dynamic slippage bound based on pool liquidity and impact."""
+    if price_impact_pct > 0.015:
+        raise ValueError(f"Price impact too high ({price_impact_pct*100:.2f}% > 1.5%). Trade aborted.")
+    return max(base_slippage, price_impact_pct * 1.2)
+
 import os, time, sys, requests
 from web3 import Web3
 from dotenv import load_dotenv
