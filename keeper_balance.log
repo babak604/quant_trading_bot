@@ -115,3 +115,4 @@ Below safety threshold of 0.0005 ETH. Refund required.
 2026-08-25 21:00:03,072 [INFO] Current ETH Balance: 0.005787 ETH
 2026-08-25 21:00:03,072 [INFO] [PASS] Keeper balance is healthy (>= 0.0005 ETH).
 2026-08-25 22:00:02,127 [ERROR] Missing ARBITRUM_RPC_URL or KEEPER_ADDRESS in .env.mainnet
+2026-08-28 09:00:02,823 [ERROR] Missing ARBITRUM_RPC_URL or KEEPER_ADDRESS in .env.mainnet

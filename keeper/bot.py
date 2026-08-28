@@ -1,4 +1,23 @@
 
+def calculate_dynamic_gas_fee(expected_profit_eth: float, base_fee_wei: int, max_profit_share: float = 0.40) -> dict:
+    """Calculates EIP-1559 maxFeePerGas and maxPriorityFeePerGas scaled by expected profit."""
+    profit_wei = int(expected_profit_eth * 1e18)
+    max_gas_budget_wei = int(profit_wei * max_profit_share)
+    
+    # Standard 210,000 gas units per multi-hop swap
+    estimated_gas_used = 210000 
+    priority_fee_per_gas = min(
+        int(max_gas_budget_wei / estimated_gas_used),
+        Web3.to_wei(10, "gwei") # Cap priority fee at 10 Gwei on Arbitrum
+    )
+    
+    max_fee_per_gas = (base_fee_wei * 2) + priority_fee_per_gas
+    return {
+        "maxFeePerGas": max_fee_per_gas,
+        "maxPriorityFeePerGas": max(priority_fee_per_gas, Web3.to_wei(0.1, "gwei"))
+    }
+
+
 def calculate_dynamic_slippage(price_impact_pct: float, base_slippage: float = 0.005) -> float:
     """Calculates dynamic slippage bound based on pool liquidity and impact."""
     if price_impact_pct > 0.015:
