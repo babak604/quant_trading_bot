@@ -18,3 +18,17 @@ def scan_cross_dex_arbitrage(token_in, token_out, amount):
             "estimated_output": amount * 1.002 # Simulated rate
         })
     return routes
+
+
+def slice_institutional_order_twap(total_amount: float, slices: int = 5, interval_seconds: int = 60) -> list:
+    """Slices large institutional orders into Time-Weighted Average Price (TWAP) chunks."""
+    slice_size = total_amount / slices
+    schedule = []
+    for i in range(slices):
+        schedule.append({
+            "slice_index": i + 1,
+            "amount": slice_size,
+            "delay_seconds": i * interval_seconds,
+            "max_impact_limit": 0.015 # 1.5% Price Impact Sentinel enforced per slice
+        })
+    return schedule

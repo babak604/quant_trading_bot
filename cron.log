@@ -71,3 +71,10 @@ Market Regime: LOW_VOLATILITY_TREND
 GARCH Position Scale: 1.00x
 Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
 Signal stored in markov_signals table.
+Model is not converging.  Current: 2940.91117160642 is not greater than 2940.9262672367245. Delta is -0.015095630304585939
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Cooldown active. Last signal was generated 3599s ago (Min required: 3600s). Skipping execution.
