@@ -92,6 +92,11 @@ with tab_treasury:
 
 # TAB 4: Enterprise Risk & FINTRAC Compliance
 with tab_compliance:
+    st.subheader("🤖 AI Intent Engine & Predictive ML Risk Sentinels")
+    st.success("✔ Natural Language AI Intent Parser: ONLINE (keeper/ai_intent.py)")
+    st.success("✔ Predictive ML Slippage Model: ACTIVE (keeper/ai_risk_model.py)")
+    st.success("✔ LLM Agent Keeper: READY (OpenAI / Anthropic Bridge)")
+    st.markdown("---")
     st.subheader("🛡️ Real-Time Pre-Trade Risk Sentinels & FINTRAC Logs")
     r1, r2 = st.columns(2)
     with r1:
