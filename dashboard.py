@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="mor.money Institutional Engine", layout="wide")
-st.title("⚡ mor.money Institutional Execution & NDAX Suite")
+st.title("⚡ mor.money — Master Institutional Execution Stack: Dark Pool RFQ, FIX 4.4 & Automated Compliance")
 
 # Top Performance Metrics
 col1, col2, col3, col4, col5 = st.columns(5)
