@@ -1,56 +1,61 @@
-import asyncio
-import sqlite3
-import datetime
-import random
+import os
+import uvicorn
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from eth_utils import keccak
+from dotenv import load_dotenv
 
-DB_PATH = "markov_1.db"
+load_dotenv()
 
-def init_db():
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS trading_signals (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            timestamp TEXT,
-            symbol TEXT,
-            regime TEXT,
-            win_prob REAL,
-            ofi_value REAL,
-            signal TEXT
-        )
-    """)
-    conn.commit()
-    conn.close()
+app = FastAPI(title="AgentFi Dark Pool Bridge", version="1.0.0")
 
-async def telemetry_loop():
-    init_db()
-    print("🟢 Telemetry Engine initialized...")
+class DarkPoolIntentRequest(BaseModel):
+    user_prompt: str
+    agent_session_key: str
+    volume_cad: float
 
-    while True:
-        try:
-            conn = sqlite3.connect(DB_PATH)
-            cursor = conn.cursor()
+@app.get("/")
+def health_check():
+    return {"status": "ok"}
 
-            regimes = ["Range-Bound", "Bullish", "Bearish"]
-            regime = random.choice(regimes)
-            win_prob = round(random.uniform(0.48, 0.56), 4)
-            ofi_val = round(random.uniform(-0.15, 0.15), 4)
-            signal = "HOLD" if win_prob < 0.53 else "BUY"
-
-            timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
-            cursor.execute(
-                "INSERT INTO trading_signals (timestamp, symbol, regime, win_prob, ofi_value, signal) VALUES (?, ?, ?, ?, ?, ?)",
-                (timestamp, "BTC-PERP", regime, win_prob, ofi_val, signal)
-            )
-            conn.commit()
-            conn.close()
-
-            print(f"[{timestamp}] Snapshot recorded | Regime: {regime} | Win Prob: {win_prob:.2%}")
-            await asyncio.sleep(5)  # Captures 12 snapshots/minute
-
-        except Exception as e:
-            print(f"⚠️ Telemetry loop error: {e}. Retrying in 5s...")
-            await asyncio.sleep(5)
+@app.post("/api/v1/agent/parse-dark-pool-intent")
+async def parse_dark_pool_intent(req: DarkPoolIntentRequest):
+    try:
+        raw_commitment = f"{req.user_prompt}:{req.agent_session_key}:{req.volume_cad}"
+        order_hash = keccak(text=raw_commitment).hex()
+        volume_wei = int(req.volume_cad * 10**18)
+        
+        return {
+            "status": "success",
+            "order_hash": f"0x{order_hash}",
+            "volume_wei": volume_wei,
+            "session_key": req.agent_session_key,
+            "target_contract": os.getenv("STYLUS_CONTRACT_ADDRESS")
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    asyncio.run(telemetry_loop())
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+# ==========================================
+# AgentFi Swarm Trading Endpoint Extension
+# ==========================================
+from swarm_orchestration import SentimentAgent, RiskAgent, DarkPoolMatcherAgent
+
+@app.post("/api/v1/agent/swarm-trade")
+async def execute_swarm_trade(pair: str = "ETH-USDC"):
+    sentiment = SentimentAgent()
+    risk = RiskAgent()
+
+    sig = sentiment.generate_signal(pair)
+    if not risk.validate_intent(sig):
+        return {"status": "rejected", "reason": "Risk limits exceeded"}
+
+    return {
+        "status": "approved",
+        "action": sig["action"],
+        "volume": sig["volume"],
+        "confidence": sig["confidence"],
+        "timestamp": time.time()
+    }

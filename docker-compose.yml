@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  fastapi-intent-parser:
+    build: .
+    container_name: agentfi_fastapi_parser
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: always
+
+  dark-pool-matcher:
+    build: .
+    container_name: agentfi_dark_pool_matcher
+    command: python3 dark_pool_matcher.py
+    env_file:
+      - .env
+    depends_on:
+      - fastapi-intent-parser
+    restart: on-failure
+
+  swarm-orchestrator:
+    build: .
+    container_name: agentfi_swarm_orchestrator
+    command: python3 swarm_orchestration.py
+    env_file:
+      - .env
+    depends_on:
+      - fastapi-intent-parser
+    restart: on-failure
+
+  zkml-verifier:
+    build: .
+    container_name: agentfi_zkml_verifier
+    command: python3 zkml_proof_verifier.py
+    env_file:
+      - .env
+    depends_on:
+      - fastapi-intent-parser
+    restart: on-failure
