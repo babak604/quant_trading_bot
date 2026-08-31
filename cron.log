@@ -78,3 +78,65 @@ GARCH Position Scale: 1.00x
 Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
 Signal stored in markov_signals table.
 Cooldown active. Last signal was generated 3599s ago (Min required: 3600s). Skipping execution.
+Model is not converging.  Current: 2945.5905618639927 is not greater than 2945.614656879296. Delta is -0.024095015303373657
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Model is not converging.  Current: 2950.2277401437686 is not greater than 2950.252803252495. Delta is -0.025063108726499195
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Model is not converging.  Current: 2954.1925999853947 is not greater than 2954.2175624175698. Delta is -0.024962432175016147
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Cooldown active. Last signal was generated 3544s ago (Min required: 3600s). Skipping execution.
+Model is not converging.  Current: 2963.482776244859 is not greater than 2963.5094144690515. Delta is -0.026638224192538473
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Cooldown active. Last signal was generated 3599s ago (Min required: 3600s). Skipping execution.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Cooldown active. Last signal was generated 3599s ago (Min required: 3600s). Skipping execution.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.

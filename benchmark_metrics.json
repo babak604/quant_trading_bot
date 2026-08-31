@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2026-08-31T16:54:12.702355Z",
+    "test_name": "test_e2e_dark_pool_latency_benchmark",
+    "contract_address": "0x472a971E6A04D274f04460AF99bB0743144fe94E",
+    "tx_hash": "2dabb9cf6209ef513e0579e2b5bd97cacad7df95d57f52c69805e6297804524d",
+    "block_number": 304006285,
+    "gas_used": 21788,
+    "latency_metrics": {
+      "fastapi_parsing_ms": 25.03,
+      "tx_signing_ms": 271.7,
+      "onchain_confirmation_s": 2.28,
+      "total_e2e_latency_s": 2.58
+    }
+  },
+  {
+    "timestamp": "2026-08-31T17:46:49.455625Z",
+    "test_name": "test_e2e_dark_pool_latency_benchmark",
+    "contract_address": "0xcffe107557e6b3f0982e104565c74e1c7a9d3da4",
+    "tx_hash": "1c72254d631c1b76e396074adf586b78dad27162e32191000054523bb5462f46",
+    "block_number": 304019088,
+    "gas_used": 43670,
+    "latency_metrics": {
+      "fastapi_parsing_ms": 30.62,
+      "tx_signing_ms": 252.78,
+      "onchain_confirmation_s": 1.84,
+      "total_e2e_latency_s": 2.12
+    }
+  },
+  {
+    "timestamp": "2026-08-31T18:38:04.427163Z",
+    "test_name": "test_e2e_dark_pool_latency_benchmark",
+    "contract_address": "0xcffe107557e6b3f0982e104565c74e1c7a9d3da4",
+    "tx_hash": "f6d5d19ac12869e5b459131e6595191bf691e13b06a2398871c3fe8ff981298e",
+    "block_number": 304031456,
+    "gas_used": 21788,
+    "latency_metrics": {
+      "fastapi_parsing_ms": 25.18,
+      "tx_signing_ms": 247.23,
+      "onchain_confirmation_s": 3.46,
+      "total_e2e_latency_s": 3.73
+    }
+  },
+  {
+    "timestamp": "2026-08-31T18:42:13.773760+00:00Z",
+    "test_name": "test_e2e_dark_pool_latency_benchmark",
+    "contract_address": "0xcffe107557e6b3f0982e104565c74e1c7a9d3da4",
+    "tx_hash": "186e4cafd7bba46cf799caa47127f17b4fec8b4aed3928180678e16694458cba",
+    "block_number": 304032462,
+    "gas_used": 21788,
+    "latency_metrics": {
+      "fastapi_parsing_ms": 28.89,
+      "tx_signing_ms": 260.3,
+      "onchain_confirmation_s": 2.21,
+      "total_e2e_latency_s": 2.5
+    }
+  },
+  {
+    "timestamp": "2026-08-31T18:43:41.808799+00:00Z",
+    "test_name": "test_e2e_dark_pool_latency_benchmark",
+    "contract_address": "0xcffe107557e6b3f0982e104565c74e1c7a9d3da4",
+    "tx_hash": "2dc040babdffec2201b8f334d6a264c8f4fd536d788e6484d36eb9a65396cf92",
+    "block_number": 304032818,
+    "gas_used": 21788,
+    "latency_metrics": {
+      "fastapi_parsing_ms": 23.82,
+      "tx_signing_ms": 269.72,
+      "onchain_confirmation_s": 1.26,
+      "total_e2e_latency_s": 1.55
+    }
+  },
+  {
+    "timestamp": "2026-08-31T18:44:33.675637+00:00Z",
+    "test_name": "test_e2e_dark_pool_latency_benchmark",
+    "contract_address": "0xcffe107557e6b3f0982e104565c74e1c7a9d3da4",
+    "tx_hash": "b62716ed8d93d61123fbf65cf5e7fd020c6d042295b1513fa7edddd799b5a981",
+    "block_number": 304033007,
+    "gas_used": 21788,
+    "latency_metrics": {
+      "fastapi_parsing_ms": 49.24,
+      "tx_signing_ms": 1414.77,
+      "onchain_confirmation_s": 4.91,
+      "total_e2e_latency_s": 6.37
+    }
+  }
+]
