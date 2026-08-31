@@ -13,7 +13,7 @@ load_dotenv()
 RPC_URL = os.getenv("ARBITRUM_SEPOLIA_RPC", "https://sepolia-rollup.arbitrum.io/rpc")
 PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 CONTRACT_ADDRESS = os.getenv("STYLUS_CONTRACT_ADDRESS")
-TEST_PORT = 8009
+TEST_PORT = 8000
 
 ABI = [
     {"type": "function", "name": "register_zkml_model", "inputs": [{"name": "image_id", "type": "bytes32"}], "outputs": []},

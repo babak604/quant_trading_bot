@@ -140,3 +140,18 @@ Market Regime: LOW_VOLATILITY_TREND
 GARCH Position Scale: 1.00x
 Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
 Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.
