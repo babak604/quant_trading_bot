@@ -14,6 +14,31 @@ class SentimentAgent:
             "suggested_amount": 15.5
         }
 
+class RiskAgent:
+    def __init__(self):
+        pass
+
+    def evaluate_risk(self, pair: str, amount: float):
+        return {
+            "status": "APPROVED",
+            "risk_score": 0.12,
+            "max_slippage": 0.005,
+            "gmx_liquidity_depth_usd": 12500000.00
+        }
+
+class DarkPoolMatcherAgent:
+    def __init__(self):
+        pass
+
+    def match_order(self, pair: str, action: str, amount: float):
+        raw_intent = f"DARK_POOL_{pair}_{action}_{amount}_{time.time()}"
+        order_hash = keccak(text=raw_intent).hex()
+        return {
+            "status": "MATCHED",
+            "order_hash": order_hash,
+            "stylus_contract": "0xcffe107557e6b3f0982e104565c74e1c7a9d3da4"
+        }
+
 class SwarmOrchestrator:
     def __init__(self):
         print("================ [AGENTFI SWARM + GMX V2 ORCHESTRATOR INITIALIZED] ================")

@@ -1,54 +1,31 @@
+version: '3.8'
+
 services:
   fastapi-intent-parser:
-    build: .
     container_name: agentfi_fastapi_parser
+    build: .
+    command: python3 -m uvicorn main:app --host 0.0.0.0 --port 8000
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app
-    environment:
-      - PYTHONPATH=/app/venv/lib/python3.12/site-packages
-    command: python3 -m uvicorn main:app --host 0.0.0.0 --port 8000
-    restart: always
 
   streamlit-dashboard:
-    build: .
     container_name: agentfi_streamlit_dashboard
+    build: .
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
     ports:
       - "8501:8501"
-    volumes:
-      - .:/app
-    environment:
-      - PYTHONPATH=/app/venv/lib/python3.12/site-packages
-    command: python3 -m streamlit run dashboard.py --server.port=8501 --server.address=0.0.0.0
-    restart: always
 
   swarm-orchestrator:
-    build: .
     container_name: agentfi_swarm_orchestrator
-    volumes:
-      - .:/app
-    environment:
-      - PYTHONPATH=/app/venv/lib/python3.12/site-packages
+    build: .
     command: python3 swarm_orchestration.py
-    restart: always
 
   dark-pool-matcher:
-    build: .
     container_name: agentfi_dark_pool_matcher
-    volumes:
-      - .:/app
-    environment:
-      - PYTHONPATH=/app/venv/lib/python3.12/site-packages
-    command: python3 -c "import time; print('[DarkPool Matcher] Active listening on Stylus WASM...'); [time.sleep(3600) for _ in iter(int, 1)]"
-    restart: always
+    build: .
+    command: python3 -c "import time; print('Dark Pool Matcher active'); time.sleep(3600)"
 
   zkml-verifier:
-    build: .
     container_name: agentfi_zkml_verifier
-    volumes:
-      - .:/app
-    environment:
-      - PYTHONPATH=/app/venv/lib/python3.12/site-packages
-    command: python3 -c "import time; print('[zkML Verifier] RISC Zero proof engine online...'); [time.sleep(3600) for _ in iter(int, 1)]"
-    restart: always
+    build: .
+    command: python3 -c "import time; print('zkML Verifier active'); time.sleep(3600)"
