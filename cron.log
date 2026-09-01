@@ -177,3 +177,22 @@ Market Regime: LOW_VOLATILITY_TREND
 GARCH Position Scale: 1.00x
 Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
 Signal stored in markov_signals table.
+$BTC-USD: possibly delisted; no price data found  (period=30d)
+
+1 Failed download:
+['BTC-USD']: possibly delisted; no price data found  (period=30d)
+Fetching market data for BTC-USD...
+Traceback (most recent call last):
+  File "/home/ubuntu/quant_trading_bot/generate_signals.py", line 95, in <module>
+    run_pipeline()
+  File "/home/ubuntu/quant_trading_bot/generate_signals.py", line 67, in run_pipeline
+    regime_data = engine.detect_market_regime(df)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/quant_trading_bot/quant_engine.py", line 23, in detect_market_regime
+    self.hmm_model.fit(returns)
+  File "/home/ubuntu/quant_trading_bot/venv/lib/python3.12/site-packages/hmmlearn/base.py", line 475, in fit
+    X = check_array(X)
+        ^^^^^^^^^^^^^^
+  File "/home/ubuntu/quant_trading_bot/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1110, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 1)) while a minimum of 1 is required.
