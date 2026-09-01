@@ -1,0 +1,17 @@
+[package]
+name = "mormoney_stylus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+stylus-sdk = "0.6.0"
+alloy-primitives = "0.8.0"
+
+[lib]
+crate-type = ["cdylib"]
+path = "stylus_contract/src/lib.rs"
+
+[profile.release]
+codegen-units = 1
+opt-level = "s"
+panic = "abort"
