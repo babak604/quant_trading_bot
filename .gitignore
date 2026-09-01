@@ -4,3 +4,5 @@ __pycache__/
 .env
 signals.db
 *.db
+circuit_breaker.log
+*.log
