@@ -1,7 +1,10 @@
 fastapi
 uvicorn
 streamlit
-web3
 eth-utils
+eth-hash
+eth-abi
+eth-typing
+web3
 pydantic
 requests

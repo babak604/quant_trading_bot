@@ -1,31 +1,45 @@
-version: '3.8'
-
 services:
   fastapi-intent-parser:
-    container_name: agentfi_fastapi_parser
     build: .
-    command: python3 -m uvicorn main:app --host 0.0.0.0 --port 8000
+    container_name: agentfi_fastapi_parser
     ports:
       - "8000:8000"
-
-  streamlit-dashboard:
-    container_name: agentfi_streamlit_dashboard
-    build: .
-    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
-    ports:
-      - "8501:8501"
-
-  swarm-orchestrator:
-    container_name: agentfi_swarm_orchestrator
-    build: .
-    command: python3 swarm_orchestration.py
+    environment:
+      - PYTHONPATH=/app:/app/app
+    env_file:
+      - .env
+    restart: always
 
   dark-pool-matcher:
-    container_name: agentfi_dark_pool_matcher
     build: .
-    command: python3 -c "import time; print('Dark Pool Matcher active'); time.sleep(3600)"
+    container_name: agentfi_dark_pool_matcher
+    command: python3 dark_pool_matcher.py
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
+    depends_on:
+      - fastapi-intent-parser
+    restart: always
 
   zkml-verifier:
-    container_name: agentfi_zkml_verifier
     build: .
-    command: python3 -c "import time; print('zkML Verifier active'); time.sleep(3600)"
+    container_name: agentfi_zkml_verifier
+    command: python3 zkml_proof_verifier.py
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
+    depends_on:
+      - fastapi-intent-parser
+    restart: always
+
+  streamlit-dashboard:
+    build: .
+    container_name: agentfi_streamlit_dashboard
+    command: python3 -m streamlit run dashboard.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
+    ports:
+      - "8501:8501"
+    depends_on:
+      - fastapi-intent-parser
+    restart: always

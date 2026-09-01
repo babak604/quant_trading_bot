@@ -1,0 +1,12 @@
+/source/target/release/deps/stylus_core-3a606b3dfd3f99be.d: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/mod.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/errors.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/host.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/sol.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/storage.rs
+
+/source/target/release/deps/libstylus_core-3a606b3dfd3f99be.rlib: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/mod.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/errors.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/host.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/sol.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/storage.rs
+
+/source/target/release/deps/libstylus_core-3a606b3dfd3f99be.rmeta: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/mod.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/errors.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/host.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/sol.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/storage.rs
+
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/lib.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/mod.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/calls/errors.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/host.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/sol.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stylus-core-0.10.9/src/storage.rs:
