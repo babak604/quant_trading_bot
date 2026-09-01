@@ -196,3 +196,8 @@ Traceback (most recent call last):
   File "/home/ubuntu/quant_trading_bot/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1110, in check_array
     raise ValueError(
 ValueError: Found array with 0 sample(s) (shape=(0, 1)) while a minimum of 1 is required.
+Fetching market data for BTC-USD...
+Market Regime: LOW_VOLATILITY_TREND
+GARCH Position Scale: 1.00x
+Generated Signal: BTC | Regime: BULL_EXPANSION | Win Prob: 5800 bps
+Signal stored in markov_signals table.

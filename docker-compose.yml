@@ -43,3 +43,15 @@ services:
     depends_on:
       - fastapi-intent-parser
     restart: always
+
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: mor_money_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - streamlit-dashboard
+      - fastapi-intent-parser
+    restart: always

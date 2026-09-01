@@ -142,3 +142,4 @@ Below safety threshold of 0.0005 ETH. Refund required.
 2026-09-01 14:00:02,646 [ERROR] Missing ARBITRUM_RPC_URL or KEEPER_ADDRESS in .env.mainnet
 2026-09-01 16:00:02,471 [ERROR] Missing ARBITRUM_RPC_URL or KEEPER_ADDRESS in .env.mainnet
 2026-09-01 17:00:02,201 [ERROR] Missing ARBITRUM_RPC_URL or KEEPER_ADDRESS in .env.mainnet
+2026-09-01 18:00:01,391 [ERROR] Missing ARBITRUM_RPC_URL or KEEPER_ADDRESS in .env.mainnet
