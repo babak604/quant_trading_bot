@@ -6,3 +6,4 @@ signals.db
 *.db
 circuit_breaker.log
 *.log
+*.log
